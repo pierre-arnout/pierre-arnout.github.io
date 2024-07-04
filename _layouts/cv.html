@@ -1,0 +1,67 @@
+---
+layout: base
+---
+<section class="main-section cv">
+    <div class="row justify-content-between">
+    
+    <div class="col-md-8">
+        <h3>Curriculum Vitæ <a href="/assets/Pierre-Arnout-cv.pdf" class="float-end">Download as PDF</a></h3>
+        <div class="post-content">
+            <p>34 years old French Python Engineer with 15 years of working experience with APIs, Saas development and web-scraping.</p>
+        
+            <h3 class="separate">Experiences</h3>
+            <div class="experiences">
+
+                {%- for exp in site.data.experiences -%}
+                <div class="experience-item">
+
+                    <div class="experience-header">
+                        <h5>{{ exp.title }} <span>{{ exp.company }}</span></h5>
+                        <p class="experience-info">
+                            <span class="date">{{ exp.dates }}</span> -
+                            <span class="location">{{ exp.place }}</span> -
+                            <span class="language">{{ exp.language }}</span>
+                        </p>
+                        <p class="experience-body">
+                            {{ exp.description }}
+                        </p>
+                    </div>
+
+                </div>
+                {%- endfor -%}
+            </div>
+
+            <h3 class="separate2">References</h3>
+            <p>
+            {%- for ref in site.data.references -%}
+                <b>{{ ref.name }}</b> - {{ ref.title }} @{{ ref.company }}
+            {%- endfor -%}
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-3 skills">
+        <h3>Skills</h3>
+        <ul>
+        {%- for skill in site.data.skills -%}
+            <li>{{ skill }}</li>
+        {%- endfor -%}
+        </ul>
+
+        <h3>Languages</h3>
+        <ul>
+            {%- for language in site.data.languages -%}
+                <li>{{ language }}</li>
+            {%- endfor -%}
+        </ul>
+
+        <h3>Hobbies</h3>
+        <ul>
+            {%- for hobby in site.data.hobbies -%}
+                <li>{{ hobby }}</li>
+            {%- endfor -%}
+        </ul>
+
+    </div>
+    </div>
+</section>

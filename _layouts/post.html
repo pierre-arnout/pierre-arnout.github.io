@@ -1,0 +1,31 @@
+---
+layout: base
+---
+<article class="solo-article">
+
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  <div class="post-content">
+    <h1 class="post-main-title">{{ page.title }}</h1>
+    {%- if page.picture -%}
+    <a class="post-link-img">
+      <img src="/images/photography/{{ page.picture.path }}" alt=""/>
+      <div class="post-picture-infos">
+        <strong>Film: </strong> {{ page.picture.film | default: 'N/A'}},
+        <strong>ISO: </strong> {{ page.picture.iso | default: 'N/A (nominative)'}},
+        <strong>Developer: </strong> {{ page.picture.developer | default: 'N/A'}},
+        <strong>Paper: </strong> {{ page.picture.paper | default: 'N/A'}}
+      </div>
+    </a>
+    {%- endif -%}
+
+    <div class="post-header d-flex justify-content-between">
+      <a href="/blog">< back to articles</a>
+      <h2>{{ page.date | date: date_format }}</h2>
+    </div>
+    <h2 class="post-main-title"><small class="text-muted">{{ page.title }}</small></h2>
+
+    {{ content }}
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

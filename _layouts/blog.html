@@ -1,0 +1,81 @@
+---
+layout: base
+---
+
+<div class="content-header">
+
+{% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+  {%- if posts.size > 0 -%}
+    <div class="article-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in posts -%}
+        <div class="post-item">
+            {%- if post.picture -%}
+            <div class="row">
+                <div class="col-md-6">
+                    <a class="post-link-img" href="{{ post.url | relative_url }}">
+                        <img src="/images/photography/{{ post.picture.path }}" alt="{{ post.title }}"/>
+                    </a>
+                </div>
+                <div class="col-md-6 post-full">
+                    <h3><a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                    </a></h3>
+                    <div class="post-content">
+                        {{ post.excerpt }}
+                    </div>
+                    <span class="post-infos-date">{{ post.date | date: date_format }}</span>
+                    <a href="{{ post.url | relative_url }}" class="post-infos-link">
+                        Read full article >
+                    </span>
+                </div>
+            </div>
+            {%- else -%}
+            <div class="row">
+                <div class="col-md-12 post-full">
+                    <h3>
+                        <a class="post-link" href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                    </h3>
+                    <div class="post-content">
+                        {{ post.excerpt }}
+                    </div>
+                    <div class="post-infos">
+                        <span class="post-infos-date">{{ post.date | date: date_format }}</span>
+                        <a href="{{ post.url | relative_url }}" class="post-infos-link">
+                            Read full article >
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {%- endif -%}
+        </div>
+        <hr class="post-item-hr"/>
+      {%- endfor -%}
+    </div>
+
+    {% if site.paginate %}
+      <div class="pager">
+        <ul class="pagination">
+        {%- if paginator.previous_page %}
+          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
+        {%- else %}
+          <li><div class="pager-edge">•</div></li>
+        {%- endif %}
+          <li><div class="current-page">{{ paginator.page }}</div></li>
+        {%- if paginator.next_page %}
+          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+        {%- else %}
+          <li><div class="pager-edge">•</div></li>
+        {%- endif %}
+        </ul>
+      </div>
+    {%- endif %}
+
+  {%- endif -%}

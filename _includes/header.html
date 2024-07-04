@@ -1,0 +1,20 @@
+<header class="page-header">
+  <nav class="navbar navbar-parnout justify-content-between">
+    <a class="navbar-brand" href="#">
+      {%- if page.layout == 'cv' -%}
+        {%- assign heading = site.heading_pro -%}
+      {%- else -%}
+        {%- assign heading = site.heading_perso -%}
+      {%- endif -%}
+      <h1>{{ site.title }} - {{ heading }}</h1>
+    </a>
+
+    <div class="navbar-nav">
+      {%- if page.layout == 'cv' -%}
+      <a class="nav-item nav-link" href="/blog">Blog</a>
+      {%- else -%}
+      <a class="nav-item nav-link" href="/">Curriculum Vitæ</a>
+      {%- endif -%}
+    </div>
+  </nav>
+</header>
