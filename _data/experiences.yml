@@ -1,0 +1,52 @@
+- title: Backend Engineer
+  company: '@Pricehubble'
+  dates: 2021 to 2024
+  place: Remote
+  language: English
+  description: |-
+    As a freelancer I helped my customers to build quality applications.<br/><br/>
+    I mostly worked with three companies, two were focused on scraping solutions, the other was a Django REST application.
+- title: Backend and Scraping Engineer
+  company: 'Freelancer'
+  dates: 2017 to 2021
+  place: Remote
+  language: English
+  description: |-
+    PriceHubble is a real estate insight and innovative Saas.<br/><br/>
+    I designed, developed and maintained APIs and front-end features from the database schema to the webpage.
+    <br/><br/>All three main Python frameworks - Django, Flask and FastAPI - were used, front-end was made with React.
+    <br/>For my part, I mostly focused on in-house and public APIs development, design and documentation.
+- title: Backend Engineer
+  company: '@Fraudbuster'
+  dates: 2017 to 2021
+  place: Marseille
+  language: French
+  description: |-
+    Fraudbuster helps mobile phone providers to detect and block fraud on their networks.<br/><br/>
+    I was in charge of internal APIs used to display Fraudbuster’s data to its Data Scientists and customers with some DevOps aspect to the role.
+    <br/><br/>APIs were made with Flask consuming a database PostgreSQL database, deployed on physical servers using Docker.
+- title: Backend and Scraping Engineer
+  company: '@MonsieurDrive'
+  dates: 2012 to 2014
+  place: Paris
+  language: French
+  description: |-
+    MonsieurDrive (acquired by Cryteo since then) was a drive market price comparator.<br/><br/>
+    I was in charge of scraping many sources, designing and building the whole orchestrating system including queuing / jobs, databases, parsers, scrapers and KPIs.
+    <br/><br/>As the company and team grew I became manager of the scraping team of three developers.
+- title: Backend Engineer
+  company: '@Lengow'
+  dates: 2009 to 2012
+  place: Nantes
+  language: French
+  description: |-
+    Lengow help e-retailers to transfer their catalog to many different platforms.<br/><br/>
+    As backend engineer I was in charge of plugin-in many different APIs such as Rakuten, Rueducommerce and many more, I also helped to design internal APIs and database schemas.
+    <br/><br/>More of that, I was in charge of a Magento plugin for our customers to expose an ad-hoc API from their websites to Lengow’s system.
+- title: Fullstack Developer
+  company: 'Web agency'
+  dates: 2007 to 2009
+  place: France
+  language: French
+  description: |-
+    Fullstack developer for two small sized web agencies.
