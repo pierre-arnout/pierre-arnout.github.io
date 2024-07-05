@@ -4,18 +4,18 @@
   place: Remote
   language: English
   description: |-
-    As a freelancer I helped my customers to build quality applications.<br/><br/>
-    I mostly worked with three companies, two were focused on scraping solutions, the other was a Django REST application.
-- title: Backend and Scraping Engineer
+    PriceHubble is a real estate insight and innovative Saas.<br/><br/>
+    I designed, developed and maintained APIs and front-end features from the database schema to the webpage.
+    <br/><br/>All three main Python frameworks - Django, Flask and FastAPI - were used, front-end was made with React.
+    <br/>For my part, I mostly focused on in-house and public APIs development, design and documentation.
+    - title: Backend and Scraping Engineer
   company: 'Freelancer'
   dates: 2017 to 2021
   place: Remote
   language: English
   description: |-
-    PriceHubble is a real estate insight and innovative Saas.<br/><br/>
-    I designed, developed and maintained APIs and front-end features from the database schema to the webpage.
-    <br/><br/>All three main Python frameworks - Django, Flask and FastAPI - were used, front-end was made with React.
-    <br/>For my part, I mostly focused on in-house and public APIs development, design and documentation.
+    As a freelancer I helped my customers to build quality applications.<br/><br/>
+    I mostly worked with three companies, two were focused on scraping solutions, the other was a Django REST application.
 - title: Backend Engineer
   company: '@Fraudbuster'
   dates: 2017 to 2021
