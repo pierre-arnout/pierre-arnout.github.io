@@ -1,4 +1,4 @@
-- title: Backend Engineer
+- title: Fullstack Engineer
   company: '@Pricehubble'
   dates: 2021 to 2024
   place: Remote
@@ -9,6 +9,7 @@
     <br/><br/>All three main Python frameworks - Django, Flask and FastAPI - were used, front-end was made with React.
     <br/>For my part, I mostly focused on in-house and public APIs development, design and documentation.
     - title: Backend and Scraping Engineer
+- title: "Backend and Scraping Engineer"
   company: 'Freelancer'
   dates: 2017 to 2021
   place: Remote
@@ -18,7 +19,7 @@
     I mostly worked with three companies, two were focused on scraping solutions, the other was a Django REST application.
 - title: Backend Engineer
   company: '@Fraudbuster'
-  dates: 2017 to 2021
+  dates: 2014 to 2017
   place: Marseille
   language: French
   description: |-
