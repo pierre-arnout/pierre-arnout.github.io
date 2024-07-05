@@ -287,3 +287,8 @@ pre {
 .post-footer{
     margin-top:2em
 }
+.caption{
+    font-size: 0.8em;
+    color: #5E5E5E;
+    font-style: italic;
+}
