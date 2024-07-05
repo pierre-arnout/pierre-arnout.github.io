@@ -1,5 +1,6 @@
 # No needs for double images
 /images/
+_site/
 
 *.gem
 *.rbc
