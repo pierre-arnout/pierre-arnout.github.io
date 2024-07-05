@@ -2,7 +2,8 @@
 - Flask / FastAPI
 - Django
 - Docker
-- Scrapy / Selenium - PostgreSQL
+- Scrapy / Selenium
+- PostgreSQL
 - MySQL
 - Mongo
 - Redis
